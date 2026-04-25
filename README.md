@@ -1,4 +1,4 @@
-# LLM Council
+﻿# LLM Council
 
 > Run any question, idea, or decision through a council of 5 AI advisors who independently analyze it, peer-review each other anonymously, and synthesize a final verdict.
 
@@ -6,11 +6,11 @@ Based on [Andrej Karpathy's LLM Council methodology](https://x.com/karpathy).
 
 ## How it Works
 
-1. **Frame** — Your question gets enriched with workspace context
-2. **Convene** — 5 advisors analyze independently in parallel (Contrarian, First Principles, Expansionist, Outsider, Executor)
-3. **Peer Review** — Advisors review each other's work anonymously
-4. **Synthesize** — A chairman produces the final verdict with agreements, clashes, blind spots, and a clear recommendation
-5. **Report** — Visual HTML report + full markdown transcript
+1. **Frame** â€” Your question gets enriched with workspace context
+2. **Convene** â€” 5 advisors analyze independently in parallel (Contrarian, First Principles, Expansionist, Outsider, Executor)
+3. **Peer Review** â€” Advisors review each other's work anonymously
+4. **Synthesize** â€” A chairman produces the final verdict with agreements, clashes, blind spots, and a clear recommendation
+5. **Report** â€” Visual HTML report + full markdown transcript
 
 ## The Five Advisors
 
@@ -48,18 +48,18 @@ Or for [OpenClaw](https://openclaw.ai) users, place in your workspace `skills/` 
 ## Output
 
 Every council session produces:
-- `council-report-[timestamp].html` — Visual report for scanning
-- `council-transcript-[timestamp].md` — Full transcript for reference
+- `council-report-[timestamp].html` â€” Visual report for scanning
+- `council-transcript-[timestamp].md` â€” Full transcript for reference
 
 ## When to Use
 
-✅ Decisions with real stakes and trade-offs
-✅ Multiple viable options where being wrong is expensive
-✅ Ideas that need pressure-testing from different angles
+âœ… Decisions with real stakes and trade-offs
+âœ… Multiple viable options where being wrong is expensive
+âœ… Ideas that need pressure-testing from different angles
 
-❌ Factual lookups with one right answer
-❌ Creation tasks (write me a tweet)
-❌ Processing tasks (summarize this)
+âŒ Factual lookups with one right answer
+âŒ Creation tasks (write me a tweet)
+âŒ Processing tasks (summarize this)
 
 ## Credits
 
@@ -70,3 +70,7 @@ Every council session produces:
 ## License
 
 MIT
+
+
+---
+*Créditos originais da metodologia: [Bruno Okamoto](https://github.com/okjpg)*

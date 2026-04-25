@@ -1,4 +1,4 @@
----
+﻿---
 name: llm-council
 description: "Run any question, idea, or decision through a council of 5 AI advisors who independently analyze it, peer-review each other anonymously, and synthesize a final verdict. Based on Karpathy's LLM Council methodology. MANDATORY TRIGGERS: 'council this', 'run the council', 'war room this', 'pressure-test this', 'stress-test this', 'debate this'. STRONG TRIGGERS (use when combined with a real decision or tradeoff): 'should I X or Y', 'which option', 'what would you do', 'is this the right move', 'validate this', 'get multiple perspectives', 'I can't decide', 'I'm torn between'. Do NOT trigger on simple yes/no questions, factual lookups, or casual 'should I' without a meaningful tradeoff (e.g. 'should I use markdown' is not a council question). DO trigger when the user presents a genuine decision with stakes, multiple options, and context that suggests they want it pressure-tested from multiple angles."
 ---
@@ -165,11 +165,11 @@ The chairman's job is to produce the final council output. It follows this struc
 
 **COUNCIL VERDICT**
 
-1. **Where the council agrees** — the points that multiple advisors converged on independently. These are high-confidence signals.
-2. **Where the council clashes** — the genuine disagreements. Don't smooth these over. Present both sides and explain why reasonable advisors disagree.
-3. **Blind spots the council caught** — things that only emerged through the peer review round. Things individual advisors missed that other advisors flagged.
-4. **The recommendation** — a clear, actionable recommendation. Not "it depends." Not "consider both sides." A real answer. The chairman can disagree with the majority if the reasoning supports it.
-5. **The one thing you should do first** — a single concrete next step. Not a list of 10 things. One thing.
+1. **Where the council agrees** â€” the points that multiple advisors converged on independently. These are high-confidence signals.
+2. **Where the council clashes** â€” the genuine disagreements. Don't smooth these over. Present both sides and explain why reasonable advisors disagree.
+3. **Blind spots the council caught** â€” things that only emerged through the peer review round. Things individual advisors missed that other advisors flagged.
+4. **The recommendation** â€” a clear, actionable recommendation. Not "it depends." Not "consider both sides." A real answer. The chairman can disagree with the majority if the reasoning supports it.
+5. **The one thing you should do first** â€” a single concrete next step. Not a list of 10 things. One thing.
 
 **Chairman prompt template:**
 
@@ -231,7 +231,7 @@ The report should be a single self-contained HTML file with inline CSS. Clean de
 
 1. **The question** at the top
 2. **The chairman's verdict** prominently displayed (this is what most people will read)
-3. **An agreement/disagreement visual** — a simple visual showing which advisors aligned and which diverged
+3. **An agreement/disagreement visual** â€” a simple visual showing which advisors aligned and which diverged
 4. **Collapsible sections** for each advisor's full response (collapsed by default)
 5. **Collapsible section** for the peer review highlights
 6. **A footer** showing the timestamp and what was counciled
@@ -274,3 +274,7 @@ The user sees the HTML report. The transcript is there if they want to dig deepe
 - **The chairman can disagree with the majority.** If 4 out of 5 advisors say "do it" but the reasoning of the 1 dissenter is strongest, the chairman should side with the dissenter and explain why.
 - **Don't council trivial questions.** If the user asks something with one right answer, just answer it. The council is for genuine uncertainty where multiple perspectives add value.
 - **The visual report matters.** Most users will scan the report, not read the full transcript. Make the HTML output clean and scannable.
+
+
+---
+*Créditos originais da metodologia: [Bruno Okamoto](https://github.com/okjpg)*
