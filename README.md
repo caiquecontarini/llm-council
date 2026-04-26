@@ -1,76 +1,71 @@
-﻿# LLM Council
+# 🏛️ Conselho de IAs (LLM Council)
 
-> Run any question, idea, or decision through a council of 5 AI advisors who independently analyze it, peer-review each other anonymously, and synthesize a final verdict.
-
-Based on [Andrej Karpathy's LLM Council methodology](https://x.com/karpathy).
-
-## How it Works
-
-1. **Frame** â€” Your question gets enriched with workspace context
-2. **Convene** â€” 5 advisors analyze independently in parallel (Contrarian, First Principles, Expansionist, Outsider, Executor)
-3. **Peer Review** â€” Advisors review each other's work anonymously
-4. **Synthesize** â€” A chairman produces the final verdict with agreements, clashes, blind spots, and a clear recommendation
-5. **Report** â€” Visual HTML report + full markdown transcript
-
-## The Five Advisors
-
-| Advisor | Thinking Style |
-|---------|---------------|
-| **The Contrarian** | Finds what's wrong, missing, or will fail |
-| **The First Principles Thinker** | Strips assumptions, rebuilds from ground up |
-| **The Expansionist** | Finds upside everyone else is missing |
-| **The Outsider** | Zero context, fresh eyes, catches curse of knowledge |
-| **The Executor** | What do you do Monday morning? |
-
-## Triggers
-
-- `council this`
-- `run the council`
-- `war room this`
-- `pressure-test this`
-- `stress-test this`
-- `debate this`
-
-## Install
-
-Copy `SKILL.md` to your Claude Code skills folder:
-
-```bash
-# Project-level
-cp SKILL.md .claude/skills/llm-council/SKILL.md
-
-# Global (all projects)
-cp SKILL.md ~/.claude/skills/llm-council/SKILL.md
-```
-
-Or for [OpenClaw](https://openclaw.ai) users, place in your workspace `skills/` directory.
-
-## Output
-
-Every council session produces:
-- `council-report-[timestamp].html` â€” Visual report for scanning
-- `council-transcript-[timestamp].md` â€” Full transcript for reference
-
-## When to Use
-
-âœ… Decisions with real stakes and trade-offs
-âœ… Multiple viable options where being wrong is expensive
-âœ… Ideas that need pressure-testing from different angles
-
-âŒ Factual lookups with one right answer
-âŒ Creation tasks (write me a tweet)
-âŒ Processing tasks (summarize this)
-
-## Credits
-
-- Methodology: [Andrej Karpathy](https://x.com/karpathy)
-- Skill adaptation: [Bruno Okamoto](https://x.com/obrunookamoto)
-- Source article: [Google Doc](https://docs.google.com/document/d/e/2PACX-1vSvw_Mk4iq4DkeMM3YVcvHgkzY-bsmnkXBC2TaEVBUDMjU4RtwDrKdxenpc-x7Vnzw5THGA4wVJd-LX/pub)
-
-## License
-
-MIT
-
+> **Envie qualquer pergunta, ideia ou decisão para um conselho de 5 especialistas em IA.**
+> Cada membro analisa de forma independente, faz revisão entre pares e gera um veredicto final sintetizado.
 
 ---
-*Créditos originais da metodologia: [Bruno Okamoto](https://github.com/okjpg)*
+
+## 🧠 Como Funciona?
+
+O **Conselho de IAs** simula uma mesa de especialistas onde cada IA assume um papel diferente:
+
+| Conselheiro | Especialidade |
+|:---|:---|
+| **🎯 Estrategista** | Visão de negócios e ROI |
+| **⚠️ Advogado do Diabo** | Riscos e pontos cegos |
+| **💡 Inovador** | Ideias fora da caixa |
+| **📊 Analista** | Dados e métricas |
+| **🔧 Técnico** | Viabilidade de implementação |
+
+---
+
+## ✨ Diferenciais
+
+- **🔄 Revisão Entre Pares:** As IAs revisam as respostas umas das outras anonimamente.
+- **⚖️ Veredicto Sintetizado:** Um resultado final que considera todos os pontos de vista.
+- **🚫 Zero Viés de Grupo:** Análises independentes antes da síntese.
+- **🌐 Multi-LLM Ready:** Funciona com Claude, GPT, Gemini e outros.
+
+---
+
+## 🚀 Casos de Uso
+
+```
+📌 "Devo lançar meu produto agora ou esperar 3 meses?"
+📌 "Qual a melhor estratégia de precificação para o meu SaaS?"
+📌 "Quais são os riscos de escalar com tráfego pago agora?"
+📌 "Como estruturar minha equipe de vendas em 2026?"
+```
+
+---
+
+## ⚙️ Como Instalar
+
+```bash
+# Clone o repositório
+git clone https://github.com/caiquecontarini/llm-council
+
+# Instale a skill no seu agente
+cp -r llm-council/skills /seu/agente/skills/
+
+# Use o comando: "Consultar o Conselho sobre [sua dúvida]"
+```
+
+---
+
+## 📂 Estrutura
+
+```
+llm-council/
+├── SKILL.md          # Instrução principal para o agente
+├── prompts/          # Prompts por perfil de conselheiro
+└── examples/         # Decisões reais analisadas pelo conselho
+```
+
+---
+
+### 👨‍💻 Autor
+[Caíque Contarini](https://github.com/caiquecontarini) — Visual Brain Ecosystem
+
+---
+*Tomando decisões de elite com inteligência coletiva — Abril 2026*
